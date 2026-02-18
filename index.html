@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amithabh D.K | Cybersecurity Engineer</title>
+    <link rel="icon" href="image/image1.jpeg">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio_2.css" type="text/css">
 </head>
@@ -11,14 +12,16 @@
     <div class="cyber-bg"></div>
     <header>
         <div id="brand"><h2>Amithabh<span>.DK</span></h2></div>
-
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contacts">Contact</a></li>
+
+
             </ul>
         </nav>
 
@@ -32,6 +35,7 @@
             <li><a href="#home" onclick="toggleMenu()">Home</a></li>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#achievements" onclick="toggleMenu()">Awards</a></li>
             <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
             <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
         </ul>
@@ -195,22 +199,6 @@
         <div class="portfolio-grid">
 
             <div class="project-card" style="border-color: var(--accent);">
-                <div class="project-meta">Live Target</div>
-                <h3>🚀 Live System Pentest</h3>
-                <p>Conducted a full-scale penetration test on a live environment, identifying critical logic flaws.</p>
-
-                <div class="bug-stats">
-                    <strong>Critical Discoveries:</strong><br>
-                    ⚠️ Account Takeover (ATO)<br>
-                    ⚠️ Clickjacking<br>
-                    📉 Total: 20+ Bugs
-                </div>
-                <div class="project-actions">
-                    <span class="small-btn" style="cursor: not-allowed; opacity: 0.7;">Confidential Report</span>
-                </div>
-            </div>
-
-            <div class="project-card">
                 <div class="project-meta">Tool Development</div>
                 <h3>Subdocker: Recon Tool</h3>
                 <p>Advanced Python-based subdomain enumeration tool with Nmap integration and WAF identification.</p>
@@ -246,6 +234,39 @@
                 </div>
             </div>
         </div>
+
+        <section id="achievements">
+        <h2 class="section-title">Honors & <span>Awards</span></h2>
+        <div class="grid-container">
+            <div class="holo-card" style="border-color: var(--accent);">
+                <span class="card-type" style="color: var(--accent); border-color: var(--accent);">LETTER OF RECOGNITION</span>
+                <h3 style="color: var(--accent);">Loyalty Paradise VAPT</h3>
+                <p>Awarded for conducting a full-stack penetration test on <strong>loyaltyparadise.com</strong>. Successfully secured user data against critical exploits.</p>
+                <div class="vuln-list" style="border-left-color: var(--accent);">
+                    > Target: Live Production Site<br>
+                    > Bugs: 2 Critical Flaws (Patched)<br>
+                    > Outcome: Recognition Awarded
+                </div>
+                <div class="card-links">
+                    <a href="https://drive.google.com/file/d/1wPZVAkmhabrm2AeP4F9UbfLJONICi42o/view?usp=drive_link" target="_blank" class="tiny-btn" style="color: var(--accent); border-color: var(--accent);">VIEW RECOGNITION LETTER</a>
+                </div>
+            </div>
+
+            <div class="holo-card" style="border-color: var(--neon-blue);">
+                <span class="card-type" style="color: var(--neon-blue); border-color: var(--neon-blue);">Finding Bugs</span>
+                <h3 style="color: var(--neon-blue);">Govt & Corporate Hunter</h3>
+                <p>Acknowledged for responsible disclosure of vulnerabilities in <strong>Tamil Nadu Govt</strong> portals and 15+ private companies.</p>
+                <div class="vuln-list" style="border-left-color: var(--neon-blue);">
+                    > TN Govt: 2 Valid Bugs Reported<br>
+                    > Corporate: 15+ Companies Secured<br>
+                    > Impact: Data Leak Prevention
+                </div>
+                <div class="card-links">
+                    <a href="https://drive.google.com/drive/folders/1quIGhdHzglOcq6nphKZzyrT-rHivdJiW?usp=drive_link" target="_blank" class="tiny-btn">VIEW BUG POC</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <h3 style="text-align: center; color: var(--accent); margin-top: 80px; letter-spacing: 2px;">AUTHORIZATIONS & CERTS</h3>
         <div class="cert-grid">

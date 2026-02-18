@@ -290,29 +290,31 @@
         }
 
         /* --- 8. PORTFOLIO GRID --- */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        .portfolio-grid, .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        .project-card, .holo-card {
+            background: var(--bg-card); border: 1px solid #333; padding: 25px;
+            border-radius: 12px; transition: 0.3s; display: flex; flex-direction: column;
+        }
+        .project-card:hover, .holo-card:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 0 20px rgba(0,255,136,0.1); }
+
+        .project-meta, .card-type {
+            font-size: 0.8rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1px;
+            border: 1px solid var(--accent); padding: 2px 8px; display: inline-block; width: fit-content; margin-bottom: 10px;
+        }
+        .project-card h3, .holo-card h3 { margin-bottom: 10px; color: #fff; font-size: 1.4rem; }
+
+        .bug-stats, .vuln-list {
+            background: rgba(255, 68, 68, 0.1); border-left: 3px solid #ff4444;
+            padding: 10px; margin: 15px 0; font-size: 0.9rem;
         }
 
-        .project-card {
-            background: var(--bg-card);
-            border: 1px solid #333;
-            padding: 25px;
-            border-radius: 12px;
-            transition: 0.4s;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
+        .project-actions, .card-links { margin-top: auto; display: flex; gap: 10px; }
+        .small-btn, .tiny-btn {
+            flex: 1; text-align: center; padding: 8px; border: 1px solid #444;
+            font-size: 0.85rem; border-radius: 4px; color: #ccc;
         }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent);
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
-        }
+        .small-btn:hover, .tiny-btn:hover { background: #333; color: var(--accent); border-color: var(--accent); }
 
         /* Corner accent */
         .project-card::after {
