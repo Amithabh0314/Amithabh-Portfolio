@@ -3,167 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmithabhTech.com</title>
-    <link rel="icon" href="myfavicon.jpg">
+    <title>Amithabh D.K | Cybersecurity Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio_2.css" type="text/css">
 </head>
 <body>
+    <div class="cyber-bg"></div>
     <header>
-        <div id="brand"><h2>Amithabh DK.</h2></div>
+        <div id="brand"><h2>Amithabh<span>.DK</span></h2></div>
+
         <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio" >portfolio</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
         </nav>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <ul class="mobile-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio" >Portfolio</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
+
+        <div id="hamburger-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-      </header>
-    <script>
-            function toggleMobileMenu(menu) {
-        menu.classList.toggle('open');
-        }
-    </script>
+
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </header>
 
     <section id="home">
-        <div class="abt">
-            <img src="amithabh-final.jpg">
-        </div>
         <div class="home-content">
-            
-            <h1>Hi, I'm Amithabh</h1>
-            <h3>ethical hacking student</h3>
-            <p>I am a student of Panimalar Engineering college(2nd year). I aim to identify vulnerabilities and conduct penetration testing in cybersecurity, ensuring robust protection against potential threats while continuously enhancing my knowledge in ethical hacking and related fields.</p>
-            <div class="resume-link"><a href="https://drive.google.com/file/d/1sb4VnxjFjvOzDpBzmiYl3UTLCzwX7wFH/view?usp=sharing" target="_blank">View Resume</a></div>
+            <span class="status-badge">● Available for Work</span>
+            <h1>AMITHABH D.K</h1>
+            <div class="typing-text">&lt; Cybersecurity Engineer /&gt;</div>
+            <p>
+                Specialized in Vulnerability Assessment, Penetration Testing (VAPT), and Bug Bounty hunting.
+                Passionate about Offensive Security and securing digital infrastructures.
+            </p>
+
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1sb4VnxjFjvOzDpBzmiYl3UTLCzwX7wFH/view?usp=sharing" target="_blank" class="cyber-btn">
+                    Download Resume
+                </a>
+                <a href="https://www.linkedin.com/in/amithabh-d-k-8b43ab319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="cyber-btn">
+                    LinkedIn
+                </a>
+                <a href="https://tryhackme.com/p/Amithabh.D.K" target="_blank" class="cyber-btn">
+                    TryHackMe
+                </a>
+                 <a href="https://github.com/Amithabh0314/" target="_blank" class="cyber-btn">
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="abt">
+            <img src="image/image1.jpeg" alt="Amithabh Photo">
         </div>
     </section>
 
     <section id="about">
-        <div class="about-wrapper">
-            <div class="about-img-container">
-                <img src="ami-5.jpg" alt="MyImage">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+            <div class="glass-card">
+                <p>
+                    I am a security enthusiast from Theni, Tamil Nadu, currently pursuing my B.E. in CSE at Panimalar Engineering College.
+                    I possess strong practical exposure through multiple internships involving network security,
+                    web application testing, and Python-based security tools.
+                </p>
+                <br>
+                <p>
+                    I actively participate in CTF challenges on platforms like <strong>TryHackMe</strong> and <strong>Bandit</strong> to sharpen my offensive security skills. My goal is to identify vulnerabilities before the bad guys do.
+                </p>
             </div>
 
-            <div class="about-me-txt">
-                        <h2>About Me</h2>
-                        <p>
-                            My name is Amithabh, and I am currently pursuing a Bachelor’s degree in Computer Science Engineering at Panimalar Engineering College. I have completed a <span>three-month internship at Corizo</span>, where I gained practical experience in cybersecurity. I possess a solid foundation in programming languages such as C and Python and have successfully completed several projects related to cybersecurity. Notably, I developed a <span>keylogger project</span> to enhance my skills and strengthen my resume. I am passionate about ethical hacking and dedicated to advancing my expertise in the field.
-                        </p>
+            <div class="glass-card skills-container">
+                <div class="skill-category">
+                    <h4>Languages & OS</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Linux (Kali)</span>
                     </div>
+                </div>
 
-                    <div class="skills">
-                        <h2>skills</h2>
-                        <ul>
-                            <li>Networking & System Administration</li>
-                            <li>OS</li>
-                            <li>Malware Prevention & Detection</li>
-                            <li>Malware Creation</li>
-                        </ul>
-                    </div>
+                <div class="skill-category">
+                    <h4>Arsenal (Tools)</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">OpenVAS</span>
+                        <span class="skill-tag">WPScan</span>
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">SubDocker</span>
 
-                    <div class="experience">
-                        <h2>Experience</h2>
-                        <ul>
-                            <li>Intern, Corizo, Duration: [July, 2024] – [Semptember, 2024].</li>
-                            <li>Intern, Learnflu, Currently Doing.</li>
-                        </ul>
                     </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Core Competencies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VAPT</span>
+                        <span class="skill-tag">OWASP Top 10</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">SOC Analysis</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="services-section">
-    <div id="services">
-        <h1>My Services</h1>
-        <div class="service-flex-wrapper">
-           <div class="vul">
-                <div class="vul-img-con"><img src="cyber-security.png" alt="vulnerability Assessment" ></div>
-                <div><h2>Vulnerability Testing</h2></div>
-                <div><p>I conduct thorough vulnerability assessments to identify and prioritize security weaknesses within your systems. By employing advanced scanning tools and various methodologies, I ensure that potential threats are recognized and mitigated effectively.
-                </p></div>
-           </div> 
-           <div class="pen">
-                <div class="pen-img-con"><img src="testing.png" alt="Penetration Testing"></div>
-                <div><h2>Penetration Testing</h2></div>
-                <div><p>I offer comprehensive penetration testing services that simulate real-world attacks to evaluate your security posture. This proactive approach really helps uncover exploitable vulnerabilities, enabling you to strengthen defenses and protect sensitive data.
-                </p></div>
-           </div>
-           <div class="websec">
-                <div class="websec-img-con"><img src="application.png" alt="Web app security"></div>
-                <div><h2>Web App Security Testing</h2></div>
-                <div><p>I specialize in web application security testing to identify vulnerabilities specific to your online platforms. Through detailed analysis and testing, I help ensure that your applications are secure from threats and comply with industry standards.</p></div>
-           </div>
-        </div>
-    </div>
-    <section>
+    <section id="experience">
+        <h2 class="section-title">Mission <span>Logs</span></h2>
 
-    <section class="portfolio-section">
-    <div id="portfolio">
-        <h1 class="portfolio-heading">Portfolio</h1>
-        <div class="portfolio-flexbox">
-        <div class="certificates">
-            <h2>Certificates</h2>
-            <ul>
-                <li>Corizo Training
-                    <div><a href="https://drive.google.com/file/d/1FUA9Nj6XyUDrkjnztvgvTZPHK0SCXi6W/view?usp=drivesdk" style="display: block;width:100%;height:100%;text-align: center;" target="_blank">View<br>Certificate</a></div>
-                </li>
-                <li>Corizo Intership
-                    <div><a href="https://drive.google.com/file/d/1FQgWM0pVgUUMRWWp218sxn__fR-19bck/view?usp=drivesdk" style="display: block;width:100%;height:100%;text-align:center;" target="_blank">View<br>Certificate</a></div>
-                </li>
-                <li>Nasscom Cyber Security
-                    <div><a href="https://drive.google.com/file/d/1oHpyyF1ZnSaW7yvg3tibwu8IIxGz-4zX/view?usp=drivesdk" style="display: block;width:100%;height:100%;text-align:center;" target="_blank">View<br>Certificate</a></div>
-                </li>
-            </ul>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">June 2025 - Aug 2025</span>
+                    <div class="timeline-role">Security Admin Associate L1</div>
+                    <span class="timeline-company">Infotact Solutions</span>
+                    <ul>
+                        <li>Performed comprehensive Vulnerability Assessment and Penetration Testing (VAPT).</li>
+                        <li>Identified critical security misconfigurations and open ports.</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1n5x2lngya9CgANC5oyrlOSVz6zbpEKMp?usp=drive_link" target="_blank" class="report-link">View Documentation -></a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">June 2025 - July 2025</span>
+                    <div class="timeline-role">Penetration Testing Intern</div>
+                    <span class="timeline-company">Cappricio Securities</span>
+                    <ul>
+                        <li>Gained hands-on experience in Bug Bounty methodologies.</li>
+                        <li>Utilized industry-standard tools like Nmap, Metasploit, and vulnerability scanners.</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1whJQM-Y67pOfmpQwKuvz8cMZzYE6pOSn?usp=drive_link" target="_blank" class="report-link">View Documentation -></a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">June 2025 - July 2025</span>
+                    <div class="timeline-role">Cybersecurity Intern</div>
+                    <span class="timeline-company">Future Interns</span>
+                    <ul>
+                        <li>Worked on Web Application Security Testing and SOC Incident Response.</li>
+                        <li>Contributed to Secure System Design initiatives.</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1EotgeDabxRki2zkwkb4DLiNAL78R809H?usp=drive_link" target="_blank" class="report-link">View Documentation -></a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Aug 2024 - Sept 2024</span>
+                    <div class="timeline-role">Cybersecurity Trainee</div>
+                    <span class="timeline-company">Corizo</span>
+                    <ul>
+                        <li>Pentested the COLDDBOX vulnerable environment (VENV).</li>
+                        <li>Executed reconnaissance, enumeration, and post-exploitation.</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/17_oXDeEuRKC8QUEluX4fLET6j2CxOMpK?usp=drive_link" target="_blank" class="report-link">View Documentation -></a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">May 2025 - June 2025</span>
+                    <div class="timeline-role">Cybersecurity Virtual Intern</div>
+                    <span class="timeline-company">ShadowFox</span>
+                    <ul>
+                        <li>Applied ethical hacking techniques in simulated environments.</li>
+                    </ul>
+                    <a href="https://drive.google.com/drive/folders/1Su75pM1K8mY62h8DFqV4L3bYcVePjZV_?usp=drive_link" target="_blank" class="report-link">View Documentation -></a>
+                </div>
+            </div>
         </div>
-        <div class="project1">
-            <h2>Project 1:</h2>
-            <h1>Bug <br>Bounty</h1>
-            <div style="width: 70%;"><a href="https://docs.google.com/document/d/1rZ6t-Tl5-ABYARICnJ8Wn6rjTtlyTBrT/edit?usp=drive_link&ouid=100705504212537697134&rtpof=true&sd=true" style="display: inline-flex;width:100%;height:100%;justify-content:center;
-            align-items:center;text-align: center;" target="_blank">View <br>project details</a></div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="section-title">Projects & <span>Deployments</span></h2>
+
+        <div class="portfolio-grid">
+
+            <div class="project-card" style="border-color: var(--accent);">
+                <div class="project-meta">Live Target</div>
+                <h3>🚀 Live System Pentest</h3>
+                <p>Conducted a full-scale penetration test on a live environment, identifying critical logic flaws.</p>
+
+                <div class="bug-stats">
+                    <strong>Critical Discoveries:</strong><br>
+                    ⚠️ Account Takeover (ATO)<br>
+                    ⚠️ Clickjacking<br>
+                    📉 Total: 20+ Bugs
+                </div>
+                <div class="project-actions">
+                    <span class="small-btn" style="cursor: not-allowed; opacity: 0.7;">Confidential Report</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-meta">Tool Development</div>
+                <h3>Subdocker: Recon Tool</h3>
+                <p>Advanced Python-based subdomain enumeration tool with Nmap integration and WAF identification.</p>
+                <div class="project-actions">
+                    <a href="https://drive.google.com/drive/folders/182Sf5VY3BRP6__wmn0XbCswvT4Aoxi2s?usp=drive_link" target="_blank" class="small-btn">Report</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-meta">Malware Analysis</div>
+                <h3>Advanced Keylogger</h3>
+                <p>Python-based keylogger demonstrating malware behavior, encrypted data transmission, and remote monitoring.</p>
+                <div class="project-actions">
+                    <a href="https://www.linkedin.com/posts/amithabh-d-k-8b43ab319_cybersecurity-ethicalhacking-pythonprojects-activity-7307710641027383297-wQtm?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFCurUgBtIDBJsrUXmnMyYVW4CW4Uo3pB0E&utm_campaign=copy_link" target="_blank" class="small-btn">View Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-meta">CTF / Lab</div>
+                <h3>COLDDBOX Pentest</h3>
+                <p>End-to-end penetration testing on the COLDDBOX virtual machine. Gained root access via enumeration.</p>
+                <div class="project-actions">
+                    <a href="https://drive.google.com/file/d/1NxsjxiUgoeWruDOY4LO6wAI-xeOHNdky/view?usp=sharing" target="_blank" class="small-btn">View Report</a>
+                </div>
+            </div>
+
+             <div class="project-card">
+                <div class="project-meta">Cryptography</div>
+                <h3>Secure Password Manager</h3>
+                <p>Developed a secure vault for credential storage using industry-standard encryption algorithms.</p>
+                <div class="project-actions">
+                    <a href="https://www.linkedin.com/posts/amithabh-d-k-8b43ab319_cybersecurity-python-encryption-activity-7317828132575563776-XAIb?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFCurUgBtIDBJsrUXmnMyYVW4CW4Uo3pB0E&utm_campaign=copy_link" target="_blank" class="small-btn">View Demo</a>
+                </div>
+            </div>
         </div>
-        <div class="project2">
-            <h2>Project 2:</h2>
-            <h1>Penetration <br>Testing</h1>
-            <div style="width: 70%;"><a href="https://drive.google.com/file/d/1NxsjxiUgoeWruDOY4LO6wAI-xeOHNdky/view?usp=sharing" style="display: inline-flex;width:100%;height:100%;justify-content: center;
-            align-items:center;text-align: center;" target="_blank">View <br>project details</a></div>
+
+        <h3 style="text-align: center; color: var(--accent); margin-top: 80px; letter-spacing: 2px;">AUTHORIZATIONS & CERTS</h3>
+        <div class="cert-grid">
+            <div class="cert-item"><a href="https://drive.google.com/file/d/1csn5n4FGPpnY-05R7KsBCP_acb4-tynN/view?usp=drive_link" target="_blank">Certified Penetration Tester <br><small>Cybertronium</small></a></div>
+            <div class="cert-item"><a href="https://drive.google.com/file/d/1Jr2WB8342ywQtCVQG7hRpwWW0FN8t771/view?usp=drive_link" target="_blank">Certified VAPT<br><small>Cappricio Securities</small></a></div>
+            <div class="cert-item"><a href="https://drive.google.com/file/d/1htoG8EEFk9O6sQU_rdFY8bDU1CshnZf2/view?usp=drive_link" target="_blank">Certified Ethical Hacker<br><small>Cisco</small></a></div>
+            <div class="cert-item"><a href="https://drive.google.com/file/d/1dlmHvOSDKCCc9BivK87Df2tSz_V0hhRg/view?usp=sharing" target="_blank">CompTIA Cloud+ (101)<br><small>Udemy</small></a></div>
+            <div class="cert-item"><a href="https://drive.google.com/file/d/1OIrZDUmQFoP6y3LTBJhB0VvfbOdEbdiI/view?usp=sharing" target="_blank">NASSCOM Cybersecurity<br><small>NASSCOM</small></a></div>
         </div>
-        <div class="project3">
-            <h2>Project 3:</h2>
-            <h1>KeyLogger <br>Software</h1>
-            <div style="width: 70%;"><a href="https://drive.google.com/file/d/1SnbyeM9wAveI8tvV3b_rHvfthd0GC5CY/view?usp=sharing" style="display: inline-flex;width:100%;height:100%;justify-content: center;
-            align-items:center;text-align: center;" target="_blank">View <br>project details</a></div>
-        </div>
-    </div>
-    </div>
     </section>
 
     <section id="contacts">
-        <h1>Contacts</h1>
-        <div class="contacts-wrapper">
-            <div class="gmail"><img src="gmail.png" ><a href="mailto:amithabh95@gmail.com">amithabh95@gmail.com</a></div>
-            <div class="phone"><img src="phone-call.png" ><a href="tel:+918015427522">8015427522</a></div>
-            <div class="resume-link"><a href="https://drive.google.com/file/d/1sb4VnxjFjvOzDpBzmiYl3UTLCzwX7wFH/view?usp=sharing" target="_blank">View Resume</a></div>
+        <h2 class="section-title">Encrypted <span>Channel</span></h2>
+        <div class="contact-wrapper">
+            <div class="contact-box">
+                <img src="image/gmail.png" alt="Email">
+                <h3>Email</h3>
+                <a href="mailto:amithabh95@gmail.com">amithabh95@gmail.com</a>
+            </div>
+            <div class="contact-box">
+                <img src="image/phone-call.png" alt="Phone">
+                <h3>Phone</h3>
+                <a href="tel:+918015427522">+91 8015427522</a>
+            </div>
+            <div class="contact-box">
+                <svg viewBox="0 0 24 24" fill="#00ff88"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <h3>Base of Ops</h3>
+                <p style="color: #fff;">Theni, Tamil Nadu, India</p>
+            </div>
         </div>
     </section>
-</body>
-<script>
-    const menu = document.querySelector('.menu');
-    const menuList = document.querySelector('.menu-list');
 
-    menu.addEventListener('click', () => {
-        menuList.classList.toggle('showmenu');
-    });
-</script>
+    <footer>
+        <p>&copy; 2026 Amithabh D.K. // System Secure.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+
+            // Animate hamburger
+            const bars = document.querySelectorAll('.bar');
+            bars[0].style.transform = menu.classList.contains('open') ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+            bars[1].style.opacity = menu.classList.contains('open') ? '0' : '1';
+            bars[2].style.transform = menu.classList.contains('open') ? 'rotate(-45deg) translate(5px, -5px)' : 'none';
+        }
+    </script>
+</body>
 </html>
